@@ -70,6 +70,7 @@ public class Comunicacion extends Thread {
         byte[] datos = objectByte(msj);
         DatagramPacket enviar = new DatagramPacket(datos, datos.length, ip, puerto);
         try {
+            System.out.println("entra");
             socket.send(enviar);
         } catch (IOException e) {
             // TODO Auto-generated catch block

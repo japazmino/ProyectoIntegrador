@@ -8,7 +8,6 @@ class Tarea extends AsyncTask<Object, Integer, Object> {
 
     private Comunicacion com;
 
-    @Override
     protected Object doInBackground(Object... params) {
         com.getInstance().enviar(params[0]);
         return null;
